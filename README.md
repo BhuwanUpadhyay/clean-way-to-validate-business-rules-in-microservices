@@ -11,5 +11,6 @@ Also, it has notable advantages: easy to change in the future, easy to test, mai
 This article will cover how practically implement the best way to validate and structure business rules in microservices.
 
 Let's say we have to develop a microservice for an Order Management Process. 
+It has various business rules that needs to check during different order state. 
 
 ![](https://raw.githubusercontent.com/BhuwanUpadhyay/clean-way-to-validate-business-rules-in-microservices/master/assets/bpm.png)
