@@ -15,7 +15,7 @@ The application that we'll create uses:
 ```shell
 NAME='Clean way to validate business rules in Microservices' && \
 PRJ=clean-way-to-validate-business-rules-in-microservices && \
-cd "$HOME/BhuwanUpadhyay/lab" && mkdir -p $PRJ && cd $PRJ && \
+mkdir -p $PRJ && cd $PRJ && \
 curl https://start.spring.io/starter.tgz \
     -d dependencies=actuator,webflux,data-r2dbc \
     -d groupId=io.github.bhuwanupadhyay -d artifactId=$PRJ -d packageName=io.github.bhuwanupadhyay.example \
