@@ -11,7 +11,7 @@ The application that we'll create uses:
 
 `Spring Boot 2.3.1.RELEASE` `Java 14` `Spring WebFlux` `Spring Data R2DBC`
 
-#### Generate the application by using Spring Initializr
+#### 1. Generate the application by using Spring Initializr
 ```shell
 NAME='Clean way to validate business rules in Microservices' && \
 PRJ=clean-way-to-validate-business-rules-in-microservices && \
@@ -24,7 +24,7 @@ curl https://start.spring.io/starter.tgz \
     -o demo.tgz && tar -xzvf demo.tgz && rm -rf demo.tgz
 ```
 
-#### Add the reactive PostgreSQL and H2 driver implementation
+#### 2. Add the reactive PostgreSQL and H2 driver implementation
 
 Open the generated project's pom.xml file, and then add the reactive PostgreSQL and H2 driver after the `spring-boot-starter-webflux` dependency, add the following text:
 
@@ -41,7 +41,7 @@ Open the generated project's pom.xml file, and then add the reactive PostgreSQL 
 </dependency>
 ```
 
-#### Configure Spring Boot to use Database for PostgreSQL and H2
+#### 3. Configure Spring Boot to use Database for PostgreSQL and H2
 
 Rename the `application.properties` file to `application.yaml`, and add the following text:
 
@@ -64,4 +64,4 @@ spring:
     username: user
 ```
 
-### Create the database schema
+### 4. Create the database schema
