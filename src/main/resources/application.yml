@@ -1,0 +1,16 @@
+logging:
+  level:
+    org.springframework.data.r2dbc: DEBUG
+spring:
+  profiles:
+    active: h2
+---
+spring:
+  profiles: h2
+---
+spring:
+  profiles: postgresql
+  r2dbc:
+    password: password
+    url: r2dbc:pool:postgres://localhost:5432/demo
+    username: user
